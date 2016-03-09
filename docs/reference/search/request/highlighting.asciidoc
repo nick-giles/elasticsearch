@@ -591,3 +591,6 @@ that fields are highlighted then you can use an array for `fields` like this:
 --------------------------------------------------
 None of the highlighters built into Elasticsearch care about the order that the
 fields are highlighted but a plugin may.
+
+=== Highlighting and the `_all` field
+If you query uses the `_all` field (which is the default), highlighting may return no results. See <<mapping-all-field,highlighting-all-field>>
